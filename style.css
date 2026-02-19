@@ -1,0 +1,32 @@
+html, *{
+    margin: 0;
+}
+
+.navbar {
+    margin: auto;
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aquamarine;
+}
+
+.navbar-head {
+    background-color: yellow;
+}
+
+.nav-list {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-button {
+    text-decoration: none;
+    color: black;
+}
+
+.login {
+    background-color: ;
+}
