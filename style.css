@@ -1,32 +1,80 @@
-html, *{
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@558&family=Montserrat:wght@600&display=swap");
+
+html,
+* {
+  margin: 0;
+}
+
+:root {
+  --color-ink-black: #0d1b2aff;
+  --color-prussian-blue: #1b263bff;
+  --color-dusk-blue: #415a77ff;
+  --color-dusty-denim: #778da9ff;
+  --color-alabaster-grey: #e0e1ddff;
 }
 
 .navbar {
-    margin: auto;
-    display: flex;
-    gap: 2rem;
-    padding: 1rem 2rem;
-    align-items: center;
-    justify-content: space-between;
-    background-color: aquamarine;
+  margin: auto;
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-dusk-blue),
+    var(--color-dusty-denim)
+  );
 }
 
 .navbar-head {
-    background-color: yellow;
+  font-family: "Cinzel", sans-serif;
+  color: var(--color-prussian-blue);
 }
 
 .nav-list {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  gap: 5rem;
+  list-style: none;
 }
 
-.nav-button {
-    text-decoration: none;
-    color: black;
+.nav-button a{
+  position: relative;
+  padding-bottom: 0.75rem;
+  text-decoration: none;
+  color: var(--color-prussian-blue);
+}
+
+.nav-button a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-prussian-blue);
+}
+
+.nav-button a:hover::after{
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.button-container {
+  display: flex;
+  gap: 2rem;
 }
 
 .login {
-    background-color: ;
+  font-family: "Montserrat", sans-serif;
+  padding: 0.5rem 1rem;
+  border-radius: 16px;
+  background-image: linear-gradient(to top,var(--color-ink-black),var(--color-prussian-blue));
+  color: var(--color-dusty-denim);
+  border-style: none;
+  text-decoration: none;
 }
