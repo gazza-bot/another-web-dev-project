@@ -14,7 +14,8 @@ html,
 }
 
 .navbar {
-  margin: auto;
+  max-width: 100vw;
+  margin: 0;
   display: flex;
   gap: 2rem;
   padding: 1rem 2rem;
@@ -53,7 +54,7 @@ html,
   content: "";
   position: absolute;
   width: 0;
-  height: 2px;
+  height: 0.125rem;
   bottom: 0;
   left: 0;
   background-color: var(--color-prussian-blue);
@@ -77,4 +78,23 @@ html,
   color: var(--color-dusty-denim);
   border-style: none;
   text-decoration: none;
+}
+
+
+.toggle-menu {
+  display: none;
+}
+
+@media (width <= 768px){
+  .toggle-menu{
+    display: block;
+  }
+
+  .nav-list{
+    display: none;
+  }
+
+  .login{
+    display: none;
+  }
 }
